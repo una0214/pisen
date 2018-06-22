@@ -1,0 +1,138 @@
+@charset 'utf-8';
+
+/*=============================================
+=            基础变量配置            =
+=============================================*/
+
+/* theme1 black background and white foreground   default style*/
+
+/* 
+ *  通用基础颜色 变量
+ *  均为 黑白色
+ */
+@color-white: #ffffff;
+@color-black: #000000;
+@color-body-bg: #ffffff;
+@color-box-bg: #ffffff;
+@color-title-bg: #eee;
+@color-border: #EDEDED;
+//主文本颜色
+@color-text-1: #333333;
+//副文本颜色
+@color-text-3: #333333;
+@color-text-5: #555555;
+@color-text-6: #666666;
+@color-text-9: #999999;
+@color-text-c: #cccccc;
+
+//禁用颜色
+@color-disabled: #bbbbbb;
+//警告颜色
+@color-warning: #ff0000;
+//提示颜色
+@color-prompt: #fff000;
+//链接颜色
+@color-a-link1: @color-text-1;
+@color-a-link3: @color-text-3;
+@color-a-link5: @color-text-5;
+@color-a-link6: @color-text-6;
+@color-a-link9: @color-text-9;
+//表单
+//表单元素边框色
+@color-form-border: #c9c9c9;
+//表单元素背景色
+@color-form-bg: #47a7ff;
+// 加载spinner 颜色
+@color-spinner: #666666;
+
+/**
+ *
+ * 主题色 为题
+ * 均为 带颜色
+ *
+ */
+
+//边框色
+@theme-color-border: #47a7ff;
+//文本色
+@theme-color-text: #47a7ff;
+//禁用色
+@theme-color-disabled: #47a7ff;
+//背景色
+@theme-color-bg: #47a7ff;
+//背景色中的文字色
+@theme-color-bg-text: #ffffff;
+
+
+/* 图片路径 */
+
+@imgPath: "../images/";
+
+/* 通用基础样式 */
+
+
+//导航图标
+.pisen-navicon-1{
+    background: url("@{imgPath}index.svg") no-repeat;
+}
+.pisen-navicon-1.active{
+    background: url("@{imgPath}index_active.svg") no-repeat;
+}
+.pisen-navicon-2{
+    background: url("@{imgPath}category.svg") no-repeat;
+}
+.pisen-navicon-2.active{
+    background: url("@{imgPath}category_active.svg") no-repeat;
+}
+.pisen-navicon-3{
+    background: url("@{imgPath}cart.svg") no-repeat;
+}
+.pisen-navicon-3.active{
+    background: url("@{imgPath}cart_active.svg") no-repeat;
+}
+
+//设置背景颜色
+.pisen-navbg{
+    background: @theme-color-bg;
+}
+.pisen-cartnav-bg{
+    background: #ffffff;
+}
+
+//设置常用文字颜色
+.pisen-color-white{
+    color: #ffffff;
+}
+.pisen-color-3{
+    color: #333333;
+}
+.pisen-color-6{
+    color: #666666;
+}
+.pisen-color-9{
+    color: #999999;
+}
+//常用背景颜色  此处可自行添加需要的颜色 
+.pisen-bg-c{
+    background: #cccccc;
+}
+/*=====  End of 基础变量配置  ======*/
+
+
+/*=============================================
+=            基本单位设定            =
+=============================================*/
+
+//适配设置 100px = 1rem;
+@import 'pxrem100.less';
+//适配设置 10px = 1rem;
+// @import 'pxrem10.less';
+
+@rem1d2: (@rem7 + @rem5) / 10;
+@rem1d4: (@rem8 + @rem6) / 10;
+@rem1d5: @rem1 + @rem5 / 10;
+@rem1d6: (@rem8 * 2) / 10;
+@rem1d7: @rem1d2 + @rem5 / 10;
+@rem1d8: (@rem9 * 2) / 10;
+
+/*=====  End of 基本单位设定  ======*/

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>布局类组件</title>
+    
+    <link rel="stylesheet/less" type="text/css" href="../less/pisen.less">
+    <script src="../js/less.v2.5.3.min.js" type="text/javascript"></script>
+</head>
+<style>
+    .icons{
+        padding: 10px;
+    }
+    .icons > li{
+        float: left;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+    }
+    .icons > li > i::before{
+        content: "\EA01";
+        display: block;
+        width: 40px;
+        height: 40px;
+        color: black;
+        font-family: weui, pisen;
+    }
+    .icons > li:nth-child(1) > i::before{
+        content: "\EA02";
+    }
+    .icons > li:nth-child(2) > i::before{
+        content: "\EA03";
+    }
+    .icons > li:nth-child(3) > i::before{
+        content: "\EA04";
+    }
+    .icons > li:nth-child(4) > i::before{
+        content: "\EA05";
+    }
+    .icons > li:nth-child(5) > i::before{
+        content: "\EA06";
+    }
+    .icons > li:nth-child(6) > i::before{
+        content: "\EA07";
+    }
+    .icons > li:nth-child(7) > i::before{
+        content: "\EA08";
+    }
+    .icons > li:nth-child(8) > i::before{
+        content: "\EA09";
+    }
+    .icons > li:nth-child(9) > i::before{
+        content: "\EA10";
+    }
+    .icons > li:nth-child(10) > i::before{
+        content: "\EA11";
+    }
+    .icons > li:nth-child(11) > i::before{
+        content: "\EA0A";
+    }
+    .icons > li:nth-child(12) > i::before{
+        content: "\EA0B";
+    }
+    .icons > li:nth-child(13) > i::before{
+        content: "\EA0C";
+    }
+    .icons > li:nth-child(14) > i::before{
+        content: "\EA0D";
+    }
+    .icons > li:nth-child(15) > i::before{
+        content: "\EA0E";
+    }
+    .icons > li:nth-child(16) > i::before{
+        content: "\EA0F";
+    }
+    .icons > li:nth-child(17) > i::before{
+        content: "\e900";
+    }
+    .icons > li:nth-child(18) > i::before{
+        content: "\e901";
+    }
+    .icons > li:nth-child(19) > i::before{
+        content: "\e902";
+    }
+    .icons > li:nth-child(20) > i::before{
+        content: "\e903";
+    }
+    .icons > li:nth-child(21) > i::before{
+        content: "\e904";
+    }
+    .icons > li:nth-child(22) > i::before{
+        content: "\e905";
+    }
+    .icons > li:nth-child(23) > i::before{
+        content: "\e906";
+    }
+    .icons > li:nth-child(24) > i::before{
+        content: "\e907";
+    }
+    .icons > li:nth-child(25) > i::before{
+        content: "\e908";
+    }
+    .icons > li:nth-child(26) > i::before{
+        content: "\e909";
+    }
+    .icons > li:nth-child(27) > i::before{
+        content: "\e90a";
+    }
+    .icons > li:nth-child(28) > i::before{
+        content: "\e90b";
+    }
+    .icons > li:nth-child(29) > i::before{
+        content: "\e90c";
+    }
+    .icons > li:nth-child(30) > i::before{
+        content: "\e90d";
+    }
+    .icons > li:nth-child(31) > i::before{
+        content: "\e90e";
+    }
+    .icons > li:nth-child(32) > i::before{
+        content: "\e90f";
+    }
+    .icons > li:nth-child(33) > i::before{
+        content: "\e910";
+    }
+    .icons > li:nth-child(34) > i::before{
+        content: "\e911";
+    }
+    .icons > li:nth-child(35) > i::before{
+        content: "\e912";
+    }
+    .icons > li:nth-child(36) > i::before{
+        content: "\e913";
+    }
+    .icons > li:nth-child(37) > i::before{
+        content: "\e914";
+    }
+    .icons > li:nth-child(38) > i::before{
+        content: "\e915";
+    }
+    .icons > li:nth-child(39) > i::before{
+        content: "\e916";
+    }
+    .icons > li:nth-child(40) > i::before{
+        content: "\e917";
+    }
+    .icons > li:nth-child(41) > i::before{
+        content: "\e918";
+    }
+    .icons > li:nth-child(42) > i::before{
+        content: "\e919";
+    }
+    .icons > li:nth-child(43) > i::before{
+        content: "\e91a";
+    }
+    .icons > li:nth-child(44) > i::before{
+        content: "\e91b";
+    }
+    .icons > li:nth-child(45) > i::before{
+        content: "\e91c";
+    }
+    .icons > li:nth-child(46) > i::before{
+        content: "\e91d";
+    }
+    .icons > li:nth-child(47) > i::before{
+        content: "\e91e";
+    }
+    .icons > li:nth-child(48) > i::before{
+        content: "\e91f";
+    }
+    .icons > li:nth-child(49) > i::before{
+        content: "\e920";
+    }
+    .icons > li:nth-child(50) > i::before{
+        content: "\e921";
+    }
+    .icons > li:nth-child(51) > i::before{
+        content: "\e922";
+    }
+    .icons > li:nth-child(52) > i::before{
+        content: "\e923";
+    }
+    .icons > li:nth-child(53) > i::before{
+        content: "\e938";
+    }
+    .icons > li:nth-child(54) > i::before{
+        content: "\e97a";
+    }
+    .icons > li:nth-child(55) > i::before{
+        content: "\e97c";
+    }
+    .icons > li:nth-child(56) > i::before{
+        content: "\e982";
+    }
+    
+</style>
+<body>
+    <ul class="icons">
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+        <li><i class=""></i></li>
+    </ul>
+    <i></i>
+</body>
+</html>
